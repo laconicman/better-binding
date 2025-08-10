@@ -119,6 +119,15 @@ public func ?? <T>(lhs: Binding<Optional<T>>, rhs: T) -> Binding<T> {
   )
 }
 
+infix operator ??? : NilCoalescingPrecedence
+@available(iOS 13, macOS 10.15, *)
+public func ???<T: Equatable>(lhs: Binding<T?>, rhs: T) -> Binding<T> {
+  Binding<T>(
+    get: { lhs.wrappedValue ?? rhs },
+    set: { lhs.wrappedValue = ($0 == rhs) ? nil : $0 }
+  )
+}
+
 @available(iOS 13, *)
 public prefix func ! <T>(lhs: Binding<Optional<T>>) -> Binding<T> {
   Binding(
