@@ -81,3 +81,7 @@ Negate a `Binding<Bool>`:
 ```swift
 Toggle("Not A", isOn: !$valueA)
 ```
+
+## Note
+The article ["Not all Bindings are created equal"](https://chris.eidhof.nl/post/binding-with-get-set) by 
+Chris Eidhof can help to understand bindings better.
