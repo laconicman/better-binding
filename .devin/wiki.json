@@ -1,0 +1,8 @@
+{
+  "repo_notes": [
+    {
+      "content": "SCOPE — this is a FORK, and the wiki must say so first. The upstream project is benlmyers/better-binding, and Sources/BetterBinding/ together with README.md is upstream's work. Do not present the library as this fork's design. This fork carries exactly one addition on top of upstream: a \"???\" operator that behaves like the nil-coalescing \"??\" for a Binding, except that it leaves the wrapped value nil when the value being set is equal to the default rather than writing the default through. Describe that single difference precisely and attribute the rest of the library to upstream.",
+      "author": "maintainer"
+    }
+  ]
+}
