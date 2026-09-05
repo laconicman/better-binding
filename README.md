@@ -1,5 +1,7 @@
 # BetterBinding
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/laconicman/better-binding)
+
 BetterBinding aims to improve SwiftUI's `Binding` by introducing several operators that will save you time when writing SwiftUI views.
 
 ## Installation
